@@ -1,0 +1,15 @@
+#sidebar {
+  width: 80px;
+  background-color: #202023;
+  height: 100%;
+  border-right: 1px solid rgba(189, 189, 192, 0.1);
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+@media only screen and (min-width: 576px) {
+  #sidebar {
+    width: 320px;
+  }
+}
+/*# sourceMappingURL=Sidebar.css.map */

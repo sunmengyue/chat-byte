@@ -1,0 +1,10 @@
+.screen {
+  max-width: 1500px;
+  height: 100vh;
+  margin: auto;
+  background-color: #bdbdc0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Screen.css.map */

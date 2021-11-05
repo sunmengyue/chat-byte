@@ -1,0 +1,15 @@
+$sidebarBlack: rgba(32, 32, 35, 1);
+$border: rgba(189, 189, 192, 0.1);
+#sidebar {
+  width: 80px;
+  background-color: $sidebarBlack;
+  height: 100%;
+  border-right: 1px solid $border;
+  transition: width 0.3s;
+}
+
+@media only screen and (min-width: 576px) {
+  #sidebar {
+    width: 320px;
+  }
+} ;

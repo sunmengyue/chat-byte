@@ -1,0 +1,8 @@
+$custBlack: rgba(189, 189, 192, 1);
+.screen {
+  max-width: 1500px;
+  height: 100vh;
+  margin: auto;
+  background-color: $custBlack;
+  display: flex;
+}
