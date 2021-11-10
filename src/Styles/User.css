@@ -1,0 +1,40 @@
+#user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+}
+
+#user:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#user .user__pic {
+  width: 50px;
+  border-radius: 50%;
+}
+
+#user .user__details {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  #user .user__details {
+    display: block;
+    padding: 0 0 0 1rem;
+  }
+  #user .user__details .user__details-name {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #user .user__details .user__details-status {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+/*# sourceMappingURL=User.css.map */

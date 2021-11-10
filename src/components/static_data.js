@@ -1,6 +1,6 @@
-import shortid from 'shortid';
-import txtgen from 'txtgen';
-import faker from 'faker';
+import { v4 as uuidv4 } from 'uuid';
+import * as txtgen from 'txtgen';
+import * as faker from 'faker';
 import _ from 'lodash';
 
 const users = generateUsers(10);
@@ -33,7 +33,7 @@ export function generateUser() {
     email: faker.internet.email(),
     profile_pic: faker.internet.avatar(),
     status: txtgen.sentence(),
-    user_id: shortid.generate(),
+    user_id: uuidv4(),
   };
 }
 /**
@@ -43,7 +43,7 @@ function generateMsg(number) {
   return {
     number,
     text: txtgen.sentence(),
-    is_user_msg: faker.random.boolean(),
+    is_user_msg: faker.datatype.boolean(),
   };
 }
 /**
